@@ -62,3 +62,62 @@ int main()
 - 2 ?
 - ne compile pas ?
 - un résultat aléatoire ?
+
+
+5]
+Quel ligne permet d'afficher 600 ?
+
+#define A [...(ci-dessous)]
+
+int main()
+{
+    printf("%d\n", (4*A*10));
+}
+
+- (7+8) ?
+- 7)+(8 ?
+- 1)*(7+8 ?
+- 1)*(70+8 ?
+
+
+6]
+Qu'affiche le code suivant lorsqu'on passe un input de 40 caractères 'A' ?
+
+int a=10;
+char buf[36];
+
+scanf("%s",buf);
+printf("%d",a);
+
+- 10 ?
+- la valeur décimale de 0x41414141 ?
+- ça dépend du compilateur ?
+- ça plante ?
+
+7]
+Qu'affiche le code suivant ?
+
+char* v[] = {"bonjour","javascript","=========","arnaud",";","issy","lesmoulineaux"};
+printf("%c",*((int*)*((short int**)v+1)+1));
+
+- 'v' ?
+- 's' ?
+- '=' ?
+- ça plante ?
+
+
+8]
+Avez-vous trouvé ce quizz :
+
+- Complètement NULL
+- passablement javascript
+- Correctement ficelé
+- Quizzant
+
+9]
+Voulez-vous un cours plus détaillé sur le fonctionnement de la pile et des autres zones principales (tas, code, bss) pour mieux comprendre les mécanismes liés à la gestion de la mémoire (tous types) ?
+
+- OUI
+- Oui
+- oui
+- OUIIIIIIIIIIII
