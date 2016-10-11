@@ -1,6 +1,8 @@
+#include <stdio.h>
 #include <errno.h>
 
 #include "ax12driver.h"
+#include "header.h" //il faudrait renommer le fichier, c'est trop général header.h
 
 
 #define BAUDRATE 9600
