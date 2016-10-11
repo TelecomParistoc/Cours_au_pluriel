@@ -65,7 +65,7 @@ int main()
 
 
 5]
-Quel ligne permet d'afficher 600 ?
+Quelle ligne permet d'afficher 600 ?
 
 #define A [...(ci-dessous)]
 
