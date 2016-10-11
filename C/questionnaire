@@ -1,1 +1,64 @@
 Message à l'intention d'Arnaud : tout commit est interdit sur ce fichier sinon git reset dans les dents!
+
+Le questionnaire sera mis sur quizzyourself lorsqu'il aura sa forme définitive.
+
+But : Montrer que le C, C plein de petits pièges :)
+
+
+1]
+Qu'affiche le code suivant :
+
+unsigned char c = -1;
+printf("%d",c);
+
+-  -1 ?
+-   1 ?
+-  255?
+-  254?
+
+
+2]
+Qu'affiche le code suivant :
+
+int a = '0123';
+printf("%d", a);
+
+- il ne compile pas ?
+- 0123  ?
+- 123   ?
+- la valeur décimale de 0x30313233 ?
+
+
+3]
+Qu'affiche le code suivant :
+
+int a = 258;
+char b = 2;
+if((a^b)&255&&!(c-a))
+    printf("leetspeak");
+else
+    printf("133t5p34k");
+
+- leetspeak ?
+- 133t5p34k ?
+
+
+4]
+Qu'affiche le code suivant :
+
+int a;
+
+int f()
+{
+    a+=2;
+}
+
+int main()
+{
+    printf("%d\n",f());
+}
+
+- 0 ?
+- 2 ?
+- ne compile pas ?
+- un résultat aléatoire ?
