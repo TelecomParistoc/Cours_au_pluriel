@@ -10,7 +10,7 @@
 6. Bibliothèque standard
 7. Entrées sorties
 8. Structures
-9. Tableaux
+9. Tableaux/Pointeurs
 10. Allocation dynamique
 
 Cours de référence à l'adresse https://www.rocq.inria.fr/secret/Anne.Canteaut/COURS_C/
@@ -20,8 +20,7 @@ Cours de référence à l'adresse https://www.rocq.inria.fr/secret/Anne.Canteaut
 
 ####But : passer d'un code source à un binaire exécutable sur la machine
 
-- Preprocessing : transformations textuelles (inclusion de fichiers sources, remplacements de chaînes)
-  Directives préfixées par un #
+- Preprocessing : transformations textuelles (inclusion de fichiers sources, remplacements de chaînes). Directives préfixées par un #
 
 Exemple :
 
@@ -68,6 +67,10 @@ Types peu abstraits (pas de string en C, pas de notion d'objets) et non universe
 
 Pour avoir confirmation de la taille effective sur la machine, on peut effectuer un sizeof(type). Par exemple : printf("%d",sizeof(char)); affichera "1" dans tous les cas.
 
+Attention : les caractères ne sont pas des types spéciaux, ils correspondent juste à une valeur (ascii, cf table correspondante). Exemple : char c = 'A'; // c vaut 0x41 = 65
+
+Pour former des chaînes de caractères, cela correspond à des tableaux de chars : char* x = "bonjour"; char x[] = "bonjour"; char x[10] = "bonjour". ' et " n'ont donc pas du tout la même signification.
+
 ####Qualitifs de type
 
 1 octet = 8 bits
@@ -85,6 +88,146 @@ char a >< unsigned char a
 *Exemple :*
 
 char a = 156;  //(10011100)
+
 printf("%d",a); //affiche -100
+
 unsigned char b = 156;  //(10011100)
+
 printf("%d",b); //affiche 158
+
+**Complément à 2 **
+
+x = 10001010
+
+On inverse les bits
+
+01110101
+
+On rajoute 1
+
+-x = 01110110
+
+On obtient la représentation binaire de -x
+
+
+###3. Instructions, opérateurs et blocs conditionnels
+
+Commentaires : // jusqu'à la fin de la ligne où /* jusqu'au prochain */
+
+Une instruction se termine toujours par un ";". Avant le ";", ça doit former une expression syntaxiquement valide.
+
+Les opérateurs sont classiques :
+
+- = ++ -- [operateur bit à bit ou élémentaire]= pour l'affectation
+
+- + / * % - pour les opérations élémenaires
+
+- ^ & | ~ >> << pour les opérations bits à bits
+
+- == != < > <= >= ! && || pour les opérations booléennes
+
+- [] * pour l'accès à une zone mémoire
+
+- & pour l'accès à une adresse
+
+
+Les blocs conditionnels également et si ce qui doit s'exécuter à l'intérieur fait plus d'une ligne il faut rajouter des accolades (sinon ça n'est pas obligatoire si il n'y a qu'une seule instruction à exécuter) :
+
+- if(expr){}[else if{}]...[else if{}][else{}]
+
+- while(expr){}
+
+- do{}while(expr);
+
+- for(i=0;i<10;i++){}
+
+- switch(expr){case 1: ...; break; case 2: ...; break; ... default: break;}
+
+- x = (expr)?a:b; (opérateur ternaire : si expr est vérifiée, x prend la valeur a, sinon b)
+
+- break et continue dans une boucle pour soit en sortir (break), soit passer au tour de boucle suivant sans exécuter les opérations entre (continue)
+
+
+###4. Fonctions
+
+Comme en java :
+
+type nom(argument(s))
+{}
+
+Exemples :
+
+char get_char_of(int a)
+{return a&255;}
+
+void print_bonjour()
+{printf("bonjour\n");}
+
+
+###5. Préprocesseur
+
+- Inclusion des fichiers contenant les prototypes (juste la ligne "type nom(argument(s))") des fonctions utilisées dans le fichier qui contient l'include.
+
+\#include<nom_bibliotheque.h>
+
+\#include<nom_fichier.h>
+
+- Définition de constantes, de MACRO
+
+\#define PI 3.14159265
+\#define a(x) x*x
+
+- Vérification d'inclusion déjà réalisée (pour éviter les inclusions mutliples)
+
+\#ifdef TRUC_QUI_DIT_QUE_LES_PROTOTYPES_DES_FONCTIONS_SONT_DEJA_IMPORTEES
+
+(suivi éventuellement d'un #elif, d'un #else, puis finalement d'un #endif)
+
+
+###6. Bibliothèque standard
+
+Contient de nombreuses fonctions de bases utiles dans beaucoup de contextes.
+
+-Affichage/écriture : printf, puts, putchar, fprintf, write ...
+
+-Lecture : scanf, gets, fgets, read, ...
+
+-Opérations sur les chaînes de caractères : strcat, strcmp, strchr, ...
+
+-Opérations mathématiques standard : cos, atan, sqrt, ...
+
+-Et un tas d'autres : exit, pause, sleep, getpid, ...
+
+Dans stdio.h, stdlib.h, unistd.h, string.h, math.h, ...
+
+(Recherchez libC pour avoir une idée des possibilités (basiques) offertes)
+
+
+###7. Entrées sorties
+
+Plusieurs possibiliés. Celle qui offre le plus de souplesse est celle qui utilise printf dans stdio.h.
+
+En effet on dispose de nombreux formats d'impression :
+
+-%d 	décimale signée
+
+-%u 	décimale non signée
+
+-%o 	octale non signée
+
+-%x 	hexadécimale non signée
+
+-%f 	décimale
+
+-%c 	caractère
+
+-%s 	chaîne de caractères
+
+- ...
+
+Plus de nombreux autres caractères spéciaux utilisés pour avoir le formatage désiré (cf la doc de printf)
+
+
+8. Structures
+9. Tableaux/Pointeurs
+10. Allocation dynamique
