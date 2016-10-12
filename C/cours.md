@@ -25,11 +25,11 @@ Cours de référence à l'adresse https://www.rocq.inria.fr/secret/Anne.Canteaut
 
 Exemple :
 
-    #ifdef __unix__<br/>
-    # include <unistd.h><br/>
-    #elif defined _WIN32<br/>
-    # include <windows.h><br/>
-    #endif</code><br/>
+    #ifdef __unix__
+    # include <unistd.h>
+    #elif defined _WIN32
+    # include <windows.h>
+    #endif
 
 - Compilation : conversion du code C en code assembleur
 
