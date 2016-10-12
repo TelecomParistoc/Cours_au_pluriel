@@ -168,13 +168,14 @@ void print_bonjour()
 
 - Inclusion des fichiers contenant les prototypes (juste la ligne "type nom(argument(s))") des fonctions utilisées dans le fichier qui contient l'include.
 
-\#include<nom_bibliotheque.h>
+\#include <nom_bibliotheque.h>
 
-\#include<nom_fichier.h>
+\#include <nom_fichier.h>
 
 - Définition de constantes, de MACRO
 
 \#define PI 3.14159265
+
 \#define a(x) x*x
 
 - Vérification d'inclusion déjà réalisée (pour éviter les inclusions mutliples)
@@ -188,15 +189,15 @@ void print_bonjour()
 
 Contient de nombreuses fonctions de bases utiles dans beaucoup de contextes.
 
--Affichage/écriture : printf, puts, putchar, fprintf, write ...
+- Affichage/écriture : printf, puts, putchar, fprintf, write ...
 
--Lecture : scanf, gets, fgets, read, ...
+- Lecture : scanf, gets, fgets, read, ...
 
--Opérations sur les chaînes de caractères : strcat, strcmp, strchr, ...
+- Opérations sur les chaînes de caractères : strcat, strcmp, strchr, ...
 
--Opérations mathématiques standard : cos, atan, sqrt, ...
+- Opérations mathématiques standard : cos, atan, sqrt, ...
 
--Et un tas d'autres : exit, pause, sleep, getpid, ...
+- Et un tas d'autres : exit, pause, sleep, getpid, ...
 
 Dans stdio.h, stdlib.h, unistd.h, string.h, math.h, ...
 
@@ -209,19 +210,19 @@ Plusieurs possibiliés. Celle qui offre le plus de souplesse est celle qui utili
 
 En effet on dispose de nombreux formats d'impression :
 
--%d 	décimale signée
+- %d 	décimale signée
 
--%u 	décimale non signée
+- %u 	décimale non signée
 
--%o 	octale non signée
+- %o 	octale non signée
 
--%x 	hexadécimale non signée
+- %x 	hexadécimale non signée
 
--%f 	décimale
+- %f 	décimale
 
--%c 	caractère
+- %c 	caractère
 
--%s 	chaîne de caractères
+- %s 	chaîne de caractères
 
 - ...
 
