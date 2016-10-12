@@ -163,7 +163,7 @@ Exemples :
     void print_bonjour()
     {printf("bonjour\n");}
 
-On peut déclarer leur signature/prototype (type nom(argument(s))) indépendemment (dans un fichier .h séparé par exemple on mettre uniquement les signatures, et dans le fichier .c on redéclarera les fonctions avec un corps cette fois).
+On peut déclarer leur signature/prototype (type nom(argument(s))) indépendemment (dans un fichier .h séparé par exemple on mettra uniquement les signatures, et dans le fichier .c on redéclarera les fonctions avec un corps cette fois).
 
 
 ###5. Préprocesseur
