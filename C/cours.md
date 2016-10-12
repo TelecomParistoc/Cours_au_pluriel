@@ -227,7 +227,27 @@ En effet on dispose de nombreux formats d'impression :
 
 Plus de nombreux autres caractères spéciaux utilisés pour avoir le formatage désiré (cf la doc de printf)
 
+Pour la lecture de caractères et un formatage facile et rapide on pourra utiliser scanf. Mais attention à ne pas en abuser, c'est une fonction dangereuse par nature (quand on veut capturer une chaîne de caractères). Les formats d'impression sont les mêmes.
+
+Les autres fonctions sont principalement du caractère par caractère ou de la lecture de chaîne avec divers paramètres supplémentaires.
+
+Certaines permettent de lire/écrire dans n'importe quoi (par exemple descripteur de fichier quand on veut lire le contenu d'un fichier).
+
 
 8. Structures
+
+struct a
+{
+    char b;
+    int c;
+};
+
+struct a my_struct = {'o',100};
+printf("%c %d\n", my_struct.b, my_struct.c);
+
+
 9. Tableaux/Pointeurs
+
+Un schéma vaut mieux qu'un long discours
+
 10. Allocation dynamique
