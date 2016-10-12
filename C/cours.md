@@ -25,11 +25,11 @@ Cours de référence à l'adresse https://www.rocq.inria.fr/secret/Anne.Canteaut
 
 Exemple :
 
-    \#ifdef \__unix\__<br/>
-    \# include <unistd.h><br/>
-    \#elif defined \_WIN32<br/>
-    \# include <windows.h><br/>
-    \#endif</code><br/>
+    #ifdef __unix__<br/>
+    # include <unistd.h><br/>
+    #elif defined _WIN32<br/>
+    # include <windows.h><br/>
+    #endif</code><br/>
 
 - Compilation : conversion du code C en code assembleur
 
@@ -73,14 +73,13 @@ Pour avoir confirmation de la taille effective sur la machine, on peut effectuer
 1 octet = 8 bits
 
 100 = 0b01100100 = 0x64
+
 -100 = 0b10011100 = 0x9c
 
 Par défaut les types sont signés :
 
 char a <=> signed char a
-
 MAIS
-
 char a >< unsigned char a
 
 *Exemple :*
