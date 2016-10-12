@@ -152,16 +152,16 @@ Les blocs conditionnels également et si ce qui doit s'exécuter à l'intérieur
 
 Comme en java :
 
-type nom(argument(s))
-{}
+    type nom(argument(s))
+    {}
 
 Exemples :
 
-char get_char_of(int a)
-{return a&255;}
+    char get_char_of(int a)
+    {return a&255;}
 
-void print_bonjour()
-{printf("bonjour\n");}
+    void print_bonjour()
+    {printf("bonjour\n");}
 
 
 ###5. Préprocesseur
@@ -237,15 +237,11 @@ Certaines permettent de lire/écrire dans n'importe quoi (par exemple descripteu
 
 ###8. Structures
 
-struct a
-
-{
-
-    char b;
-
-    int c;
-
-};
+    struct a
+    {
+        char b;
+        int c;
+    };
 
 struct a my_struct = {'o',100};
 
