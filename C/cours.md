@@ -163,6 +163,8 @@ Exemples :
     void print_bonjour()
     {printf("bonjour\n");}
 
+On peut déclarer leur signature (prototype = type nom(argument(s))) indépendemment (dans un fichier .h séparé par exemple on mettre uniquement les signatures, et dans le fichier .c on redéclarera les fonctions avec un corps cette fois).
+
 
 ###5. Préprocesseur
 
@@ -243,9 +245,8 @@ Certaines permettent de lire/écrire dans n'importe quoi (par exemple descripteu
         int c;
     };
 
-struct a my_struct = {'o',100};
-
-printf("%c %d\n", my_struct.b, my_struct.c);
+    struct a my_struct = {'o',100};
+    printf("%c %d\n", my_struct.b, my_struct.c);
 
 
 ###9. Tableaux/Pointeurs
