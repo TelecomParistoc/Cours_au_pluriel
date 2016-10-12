@@ -24,11 +24,10 @@ Cours de référence à l'adresse https://www.rocq.inria.fr/secret/Anne.Canteaut
   Directives préfixées par un #
 
 Exemple :
-  <code>
-  #ifdef \__unix\__
-  # include <unistd.h>
-  #elif defined _WIN32
-  # include <windows.h>
-  #endif</code>
+  \#ifdef \__unix\__<br/>
+  \# include <unistd.h><br/>
+  \#elif defined _WIN32<br/>
+  \# include <windows.h><br/>
+  \#endif</code><br/>
 
 - Compilation :
