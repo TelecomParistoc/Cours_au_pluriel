@@ -12,3 +12,20 @@
 8. Structures
 9. Tableaux
 10. Allocation dynamique
+
+Cours de référence à l'adresse https://www.rocq.inria.fr/secret/Anne.Canteaut/COURS_C/
+
+
+###1. Etapes de compilation
+
+####But : passer d'un code source à un binaire exécutable sur la machine
+
+- Preprocessing : transformations textuelles (inclusion de fichiers sources, remplacements de chaînes)
+  Directives préfixées par un #
+  Exemple :
+  <code>#ifdef __unix__
+  # include <unistd.h>
+  #elif defined _WIN32
+  # include <windows.h>
+  #endif</code>
+- Compilation :
