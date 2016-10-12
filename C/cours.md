@@ -75,9 +75,8 @@ Pour former des chaînes de caractères, cela correspond à des tableaux de char
 
 1 octet = 8 bits
 
-100 = 0b01100100 = 0x64
-
--100 = 0b10011100 = 0x9c
+    100 = 0b01100100 = 0x64
+    -100 = 0b10011100 = 0x9c
 
 Par défaut les types sont signés :
 
@@ -87,13 +86,11 @@ char a >< unsigned char a
 
 *Exemple :*
 
-char a = 156;  //(10011100)
+    char a = 156;  //(10011100)
+    printf("%d",a); //affiche -100
 
-printf("%d",a); //affiche -100
-
-unsigned char b = 156;  //(10011100)
-
-printf("%d",b); //affiche 158
+    unsigned char b = 156;  //(10011100)
+    printf("%d",b); //affiche 158
 
 **Complément à 2 **
 
