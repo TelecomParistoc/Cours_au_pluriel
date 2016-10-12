@@ -251,3 +251,35 @@ Certaines permettent de lire/écrire dans n'importe quoi (par exemple descripteu
 Un schéma vaut mieux qu'un long discours
 
 ###10. Allocation dynamique
+
+    int a;
+    printf("Combien d'éléments dans le tableau ?\n");
+    scanf("%d",&a);
+
+    char elems[a]; // OUIIIIIIIIIIIILLLLLLLLLLLLEEEEE (ne compile pas)
+
+Mais comment faire ?
+
+1 solution très très très très trop trop sale trouvée par Vincent sans faire exprès :
+
+    int a;
+    printf("Combien d'éléments dans le tableau ?\n");
+    scanf("%d",&a);
+
+    const int b = a;
+    char elems[b]; // OUIIIIIIIIIIIILLLLLLLLLLLLEEEEE (mais ça compile malheureusement)
+
+La bonne solution : allocation dynamique avec malloc :
+
+    int a;
+    printf("Combien d'éléments dans le tableau ?\n");
+    scanf("%d",&a);
+
+    char* elems = (char*)malloc(sizeof(char)*a);
+
+    [opérations sur elems]
+
+    //NE PAS OUBLIER A LA FIN
+    free(elems);
+
+    //ET ICI NE PAS REUTILISER elems !
