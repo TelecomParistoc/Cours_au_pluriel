@@ -168,9 +168,9 @@ void print_bonjour()
 
 - Inclusion des fichiers contenant les prototypes (juste la ligne "type nom(argument(s))") des fonctions utilisées dans le fichier qui contient l'include.
 
-\#include <nom_bibliotheque.h>
+\#include \<nom_bibliotheque.h>
 
-\#include <nom_fichier.h>
+\#include \<nom_fichier.h>
 
 - Définition de constantes, de MACRO
 
@@ -238,12 +238,17 @@ Certaines permettent de lire/écrire dans n'importe quoi (par exemple descripteu
 ###8. Structures
 
 struct a
+
 {
+
     char b;
+
     int c;
+
 };
 
 struct a my_struct = {'o',100};
+
 printf("%c %d\n", my_struct.b, my_struct.c);
 
 
