@@ -14,7 +14,7 @@ Pour ceux qui utilisent encore Eclipse, Code::Blocks ou autre monstre de lourdeu
 
 ### Paire de clés
 
-Pour se connecter au Raspberry Pi et utiliser git sans jamais devoir entrer le mot de passe, il vous faut une paire de clé.
+Pour se connecter au Raspberry Pi et utiliser git sans jamais devoir entrer le mot de passe, il vous faut une paire de clés.
 
 Vérifier d'abord que vous n'en avez pas déjà :
 
@@ -58,7 +58,7 @@ par Julien ".js" Schoumacher
 ### [Git et Makefiles](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/git/git.md)
 par Tanguy "la blague" Rouffignac
 
-### Raspberry Pi et AX12
+### [Raspberry Pi et AX12](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/AX12/cours.md)
 par moi
 
 ## Pour ceux qui veulent
