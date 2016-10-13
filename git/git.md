@@ -95,3 +95,6 @@ Faites `git status`</br>
 Creez un fichier .gitigonre contenant une ligne `bar`</br>
 Refaites `git status`</br>
 On voit que git ne tient plus compte du fichier bar.
+
+### Guide de survie
+Vous pouvez trouvez un guide de survie pour git un peu plus complet que ce cours [ICI](https://sen.enst.fr/se203/memento-git)
