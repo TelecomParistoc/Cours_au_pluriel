@@ -48,7 +48,7 @@ Enfin ajouter la clé publique à votre compte github (le contenu du fichier `id
 
 Et envoyez-moi cette même clé (publique !) pour que je vous ajoute aux Raspberry Pi, par mail à cle@bonetti.io.
 
-*Note :* ne **JAMAIS** communiquer la clé privée. 
+*Note :* ne **JAMAIS** communiquer la clé privée.
 
 ## Ensuite
 
@@ -63,5 +63,5 @@ par moi
 
 ## Pour ceux qui en savent déjà trop
 
-### Modélisation/impression 3D
+### [Modélisation/impression 3D](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/modelisation3D/cours.md)
 par Sylvain "SLR" Le Roux
