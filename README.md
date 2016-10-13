@@ -55,7 +55,7 @@ Et envoyez-moi cette même clé (publique !) pour que je vous ajoute aux Raspber
 ### [Bases du C](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/C/cours.md)
 par Julien ".js" Schoumacher
 
-### [Git et Makefiles](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/git/git.md)
+### [Git](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/git/git.md) et [Makefiles](https://sen.enst.fr/SE203/makefiles)
 par Tanguy "la blague" Rouffignac
 
 ### [Raspberry Pi et AX12](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/AX12/cours.md)
