@@ -7,6 +7,11 @@ Introduction à la programmation pour la robotique.
 
 Créez un compte github, parce que github c'est cool (et que ça vous servira forcément).
 
+### Atom
+
+Pour ceux qui utilisent encore Eclipse, Code::Blocks ou autre monstre de lourdeur, ou ceux qui n'ont que gedit, [Atom est un excellent éditeur](https://atom.io) créé par github.
+
+
 ### Paire de clés
 
 Pour se connecter au Raspberry Pi et utiliser git sans jamais devoir entrer le mot de passe, il vous faut une paire de clé.
