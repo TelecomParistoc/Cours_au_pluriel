@@ -61,7 +61,7 @@ par Tanguy "la blague" Rouffignac
 ### [Raspberry Pi et AX12](https://github.com/TelecomParistoc/Cours_au_pluriel/blob/master/AX12/cours.md)
 par moi
 
-## Pour ceux qui veulent
+## Pour ceux qui en savent déjà trop
 
 ### Modélisation/impression 3D
 par Sylvain "SLR" Le Roux
