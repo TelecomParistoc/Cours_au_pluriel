@@ -88,7 +88,7 @@ Recommitez et pushez
 ### Bonnes pratiques
 Commitez et pushez regulierement.</br>
 Ne pushez que des fichiers texte, pas d'executables (sinon, impossible de resoudre les conflits par exemple).</br>
-Pour cela, vous pouvez creer dans le dpot un fichier `.gitignore` qui contient les fichiers a ne pas commiter.</br>
+Pour cela, vous pouvez creer dans le depot un fichier `.gitignore` qui contient les fichiers a ne pas commiter.</br>
 Par exemple, on peut mettre `*.o` dans le .gitignore pour ignore tous les fichiers objets C.</br>
 Creez un fichier bar contenant ce que vous voulez.</br>
 Faites `git status`</br>
