@@ -41,7 +41,7 @@ ssh-add ~/.ssh/id_rsa
 
 Enfin ajouter la clé publique à votre compte github (le contenu du fichier `id_rsa.pub`).
 
-Et envoyez-moi cette même clé (publique !) pour que je vous ajoute aux Raspberry Pi, par mail à arnaud@bonetti.io.
+Et envoyez-moi cette même clé (publique !) pour que je vous ajoute aux Raspberry Pi, par mail à cle@bonetti.io.
 
 *Note :* ne **JAMAIS** communiquer la clé privée. 
 
